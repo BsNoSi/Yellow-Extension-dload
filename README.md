@@ -1,8 +1,8 @@
 # yellow extension dload
 
-Version 0.5.1
+Version 0.5.2
 
-> Tested with core version 0.8.23
+> Tested with Version 0.8.33 / Release 0.8.16 of Yellow
 
 ## Application
 
@@ -31,7 +31,7 @@ To uninstall simply delete the [extension files](update.ini).
 | note | *optional*: Passes the `note` as a temporary information to the page *as html*. |
 
 
-**You have to add a `dload: …` to the file description:**
+## You have to add `dload: …` to the file description:
 
 ```.md
 ---
@@ -41,6 +41,7 @@ dload: …  ← value does not matter, the entry as such is required
 …
 ---
 ```
+This suppresses useless load of the script on pages without `dload`.
 
 ## Restrictions
 
@@ -88,6 +89,8 @@ Together with some additional css in your theme file
 this creates a blinking entry that is substituted by the addressed file content. Additionally, if the user has disabled Javascript, there is a possibility to load the news manually. Be aware that the *relative path* as file location differs possibly slightly from links. The example calls a different page, if no Javascript is available, that has a layout with header and footer.
 
 ## History
+
+2020-11-21: Alignment to install changes
 
 2020-10-17: API changes applied.
 
