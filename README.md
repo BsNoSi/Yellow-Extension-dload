@@ -1,5 +1,7 @@
 # yellow extension dload
 
+**Development discontinued.**
+
 Version 0.5.2
 
 > Tested with Version 0.8.33 / Release 0.8.16 of Yellow
